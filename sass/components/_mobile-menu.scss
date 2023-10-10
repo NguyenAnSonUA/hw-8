@@ -1,4 +1,28 @@
-@media screen and(max-width: 767px) {
+@media screen and (min-width: 320px) {
+    .mobile-menu_container {
+        padding-top: 48px;
+        padding-bottom: 48px;
+        padding-left: 25px;
+    }
+    .mobile-menu-contact_lead-item:not(:last-child) {
+        margin-bottom: 32px;
+    }
+}
+
+.mobile-menu-nav_item {
+    font-family: var(--primary-font);
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    color: #212121;
+        
+    &:not(:last-child) {
+    margin-bottom: 32px;
+    }
+}
+
+@media screen and (max-width: 767px) {
     .mobile-menu {
             position: fixed;
             width: 100%;
@@ -42,18 +66,6 @@
             line-height: 0;
             cursor: pointer;
         }
-    
-    
-        .mobile-menu-nav_item {
-            font-family: var(--primary-font);
-            font-weight: 500;
-            font-size: 40px;
-            line-height: 1.18;
-            letter-spacing: 0.02em;
-    
-            &:not(:last-child) {
-                margin-bottom: 32px;
-            }
         }
     
         .mobile-menu-nav__link {
@@ -63,6 +75,9 @@
             &:focus {
                 color: var(--accent-color);
             }
+            // &:first-child {
+            //     color: var(--accent-color);
+            // }
         }
     
         .mobile-menu-contact_phone {
@@ -73,11 +88,12 @@
             line-height: 1.18;
             letter-spacing: 0.02em;
             transition: color var(--transition);
+            color: var(--accent-color);
     
-            &:hover,
-            &:focus {
-                color: var(--accent-color);
-            }
+            // &:hover,
+            // &:focus {
+            //     color: var(--accent-color);
+            // }
         }
     
         .mobile-menu-contact_email {
@@ -118,11 +134,10 @@
                 border: 1px solid rgba(33, 33, 33, 0.2);
                 position: absolute;
                 transform: rotate(90deg);
-                bottom: 58px;
-    
+                // bottom: 58px;
             }
         }
-}
+
 
 
 @media screen and(min-width: 768px) {

@@ -5,11 +5,11 @@
     padding-bottom: 60px;
 }
 
-.footer-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
+// .footer-container {
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: center;
+// }
 
 .address-main {
     margin-top: 20px;
@@ -85,10 +85,9 @@
 @media screen and (max-width: 767px) {
     .footer-container {
         display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
         justify-content: center;
-
+        flex-direction: column;
+        width: 100%;
     }
 }
 
@@ -104,6 +103,10 @@
 .address-item:not(:last-child) {
     margin-bottom: 8px;
 }
+.address-item {
+    font-style: normal;
+}
+
 @media screen and (max-width: 767px) {
     .address-item {
         text-align: center;
@@ -151,27 +154,37 @@
     text-transform: uppercase;
     margin-bottom: 20px;
     color: #FFFFFF;
-}
-@media screen and (max-width: 767px) {
-    .footer-message-head {
-        text-align: center;
+    text-align: center;
+    @media screen and (min-width: 1200px) {
+        text-align: start;
     }
 }
+// @media screen and (max-width: 767px) {
+//     .footer-message-head {
+//         text-align: center;
+//     }
+// }
 
-@media screen and (max-width: 767px) {
+
     .form-button {
+    @media screen and (max-width: 479px) {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
+        min-width: 290px;
+    }
+    @media screen and (min-width: 480px) {
         min-width: 320px;
     }
 }
-@media screen and (max-width: 1199px) {   
-    .user-email-label {
+
+.user-email-label {
+        @media screen and (max-width: 1199px) {
         font-size: 16px;
         line-height: 1.25;
         margin-bottom: 20px;
     }
+}
     .user-email-input {
         display: flex;
         align-items: center;
@@ -184,22 +197,20 @@
         border-radius: 4px;
         background-color: #2F303A;
     }
-}
+
 // mobile device
 
 // tablet device
-@media screen and (min-width: 767px) { 
+@media screen and (min-width: 480px) { 
     .footer-container {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
     }
     .content-footer {
-        margin-left: 61px;
         text-align: center;
     }
     .footer-content-item {
-        margin-right: 74px;
         text-align: center;
     }
     .footer-content-message {
@@ -216,20 +227,24 @@
 // desktop
 @media screen and (min-width: 1200px) {
     .footer-container {
-        display: flex;
+        justify-content: start;
     }
     .content-footer {
         margin-right: 70px;
+        text-align: left;
     }
     .footer-section-description {
-        text-align: center;
+        text-align: start;
     }
     .footer-content-item {
         margin-right: 93px;
     }
-        .form-button {
-            margin-top: 20px;
-            display: flex;
+    .footer-content-message {
+    margin: 0px 0px;
+    }
+    .form-button {
+        margin-top: 20px;
+        display: flex;
         }
     
         .user-email-label {
@@ -252,6 +267,10 @@
             border-radius: 4px;
             outline: none;
                 }
+        .telegram-sub-btn {
+            margin-top: 0;
+            margin-left: 12px;
+        }
 }
 
 
