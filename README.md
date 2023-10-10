@@ -1,2 +1,1 @@
-# goit-markup-hw-08
-goit-markup-hw-08
+Web studio brand used HTML, CSS, SASS, BEM, JS
